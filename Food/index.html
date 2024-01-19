@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="navbar" id="myNavbar">
+        <div class="left-section">
+            <a href="#" class="logo"><img src="IMG_20231211_234559-removebg-preview.png" alt="Logo" height="40"></a>
+            <a href="#" class="brand">FamInto</a>
+        </div>
+        <div class="right-section">
+            <a href="#">Home</a>
+            <a href="#">Categories</a>
+            <a href="#">Cart</a>
+            <a href="#">Contacts Us</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            </a>
+        </div>
+        </div>
+    </header>
+            <div class="main-content">
+                <h1 class="main-title">FamInto</h1>
+               
+                <div class="card-container">
+                <div class="card">
+                    <img src="images/intro1.jpg" alt="Card 1">
+                </div>
+                <div class="card">
+                    <img src="images/faminto.jpg" alt="Card 2">
+                </div>
+                </div>
+                <div class="search-bar">
+                    <input type="text" placeholder="Search...">
+                    <button type="button">Search</button>
+                    </div>
+                <div class="delivery-section">
+                    <select class="delivery-select">
+                    <option value="standard">Standard Delivery</option>
+                    <option value="express">Express Delivery</option>
+                    <option value="next-day">Next Day Delivery</option>
+                    </select>
+                    <button class="deliver-now-btn">Deliver Now</button>
+                </div>
+             </div>
+
+    <div class="menu-section">
+        <div class="centered-content">
+          <div class="menu-title">
+            <h2>Menu</h2>
+          </div>
+          <div class="card-container">
+            <div class="card" data-id="1" data-price="30">
+              <img src="images/noodles.jpeg" alt="Menu Card 1">
+              <h3>Noodles</h3>
+              <h3 class="item-cost">30/-</h3>
+              <div class="card-actions">
+                <button class="add-to-cart-btn" onclick="addToCart(1)">Order</button>
+                <div class="quantity">
+                  <button class="quantity-btn minus">-</button>
+                  <input type="text" class="quantity-input" value="1">
+                  <button class="quantity-btn plus">+</button>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <img src="images/manchurain.jpg" alt="Menu Card 2">
+              <h3>Manchurain</h3>
+              <h3 class="item-cost">80/-</h3>
+              <div class="card-actions">
+                <button class="add-to-cart-btn" onclick="addToCart(2)">Order</button>
+                <div class="quantity">
+                  <button class="quantity-btn minus">-</button>
+                  <input type="text" class="quantity-input" value="1">
+                  <button class="quantity-btn plus">+</button>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <img src="images/paneer.jpg" alt="Menu Card 3">
+              <h3>Paneer Tikka</h3>
+              <h3 class="item-cost">100/-</h3>
+              <div class="card-actions">
+                <button class="add-to-cart-btn" onclick="addToCart(3)">Order</button>
+                <div class="quantity">
+                  <button class="quantity-btn minus">-</button>
+                  <input type="text" class="quantity-input" value="1">
+                  <button class="quantity-btn plus">+</button>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <img src="images/chickenfry.avif" alt="Menu Card 4">
+              <h3>Chicken Fry</h3>
+              <h3 class="item-cost">90/-</h3>
+              <div class="card-actions">
+                <button class="add-to-cart-btn" onclick="addToCart(4)">Order</button>
+                <div class="quantity">
+                  <button class="quantity-btn minus">-</button>
+                  <input type="text" class="quantity-input" value="1">
+                  <button class="quantity-btn plus">+</button>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <img src="images/biryani.jpg" alt="Menu Card 5">
+              <h3>Biryani</h3>
+              <h3 class="item-cost">130/-</h3>
+              <div class="card-actions">
+                <button class="add-to-cart-btn" onclick="addToCart(5)">Order</button>
+                <div class="quantity">
+                  <button class="quantity-btn minus">-</button>
+                  <input type="text" class="quantity-input" value="1">
+                  <button class="quantity-btn plus">+</button>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <img src="images/ice cream.jpg" alt="Menu Card 6">
+              <h3>Ice Cream</h3>
+              <h3 class="item-cost">230/-</h3>
+              <div class="card-actions">
+                <button class="add-to-cart-btn" onclick="addToCart(6)">Order</button>
+                <div class="quantity">
+                  <button class="quantity-btn minus">-</button>
+                  <input type="text" class="quantity-input" value="">
+                  <button class="quantity-btn plus">+</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Add a modal for order details -->
+      <div id="orderModal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h2>Enter Your Details</h2>
+          <label for="customerName">Name:</label>
+          <input type="text" id="customerName" required>
+          <label for="customerPhone">Phone Number:</label>
+          <input type="text" id="customerPhone" required>
+          <p>Total Cost: <span id="totalCostDisplay"></span></p>
+          <button onclick="sendOrder()">Send Order</button>
+        </div>
+      </div>
+
+        <!-- Display selected items -->
+      <div id="selectedItems">
+        <h3>Selected Items:</h3>
+        <ul id="selectedItemsList"></ul>
+        <button onclick="openOrderModal()">Review and Send Order</button>
+      </div>
+      <div class="about-us-section">
+        <div class="centered-content">
+          <h2>About Us</h2>
+          <div class="container-row">
+            <div class="container">
+              <img src="images/aim.avif" alt="About Us Image 1">
+              <h4>AIM</h4>
+              <p><i> With a focus on freshness and variety, we aim to make the process of ordering and receiving nutritious meals a delightful experience.  </i></p>
+            </div>
+            <div class="container">
+              <img src="images/vision.avif" alt="About Us Image 2">
+              <h4>VISION</h4>
+              <p><i>Through innovative solutions and a commitment to sustainability, our vision extends beyond providing food </i></p>
+            </div>
+            <div class="container">
+              <img src="images/mission.avif" alt="About Us Image 3">
+              <H4>MISSION</H4>
+              <p><i>Committed to promoting health and community well-being, we aim to eliminate barriers to accessing nutritious meals</i></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <h2>FamInto</h2>
+        
+        <div class="social-icons">
+          <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+          <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+          <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+          <!-- Add more social media icons as needed -->
+        </div>
+    
+        <p>&copy; 2024 Your FamInto. All rights reserved.</p>
+      </div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

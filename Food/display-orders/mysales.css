@@ -1,0 +1,43 @@
+.nav{
+    
+    height: 20px;
+    width: 22px;
+    border-radius: 8px;
+    background-color:transparent;        
+}
+body{
+    background-image: url("sales.jpg");
+    background-size:cover;
+    
+}
+.tag{
+    height: 100px;
+    width: 800px;
+    color: white;
+    margin-top: 4%;
+    margin-left: 600px;
+    font-family:sans-serif;
+    font-weight: 900;
+    font-size: 3rem;
+}
+.bio{
+    color: white;
+    margin-top: 4%;
+    margin-left: 600px;
+    font-family:sans-serif;
+    font-weight: 100;
+    font-size: 1rem;
+}
+.ht{
+    margin-top: 20%;
+    margin-left: 650px;
+    font-family:sans-serif;
+    font-weight: 100;
+    font-size: 1rem;
+    color:#EAECCC;
+}
+.dl{
+    margin-top: 1.5%;
+    margin-left: 690px;
+}
+

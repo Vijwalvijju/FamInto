@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    border: border-box;
+}
+body{
+    background-image: url("org.jpg");
+    background-size: cover;
+    
+}
+.navbar{
+    height: 60px;
+    background-color: transparent;
+    color: white;
+    display: flex;
+    align-items:center;
+    font-size: 0.85rems;
+    width: 100%;
+}
+.nav-logo{
+    height: 50px;
+    width: 100px;
+}
+.logo{
+    background-image: url("flogo.png");
+    background-size: cover;
+    height: 90px;
+    width: 100%;
+    margin-left: 10px;
+
+}
+.border{
+    border: 1.5px solid transparent;
+}
+.border:hover{
+    border:1.5px solid white;
+}
+.title{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-left: 15px;
+    margin-top: 50px;
+}
+.hbc{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    margin-left: 300px;
+    margin-top: 50px;
+    
+    
+}
+.menu{
+    margin-top: 50px;
+    margin-left: 400px;
+}
+a{
+    margin-left: 40px;
+    text-decoration: none;
+    color: white;
+}
+.slogan{
+    color: white;
+    height: 100px;
+    width: 200px;
+    background-color: transparent;
+    border-radius: 2px;
+    margin-top: 8%;
+    margin-left: 50px;    
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-family:sans-serif;
+}
+.Eat{
+    font-weight: 900;
+    font-size: 4rem;
+}
+.h1{
+    font-size: 2rem;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+.slogan1{
+    height: 100px;
+    width: 200px;
+    color: white;
+    background-color: transparent;
+    border-radius: 2px;
+    margin-top: 0.2%;
+    margin-left: 190px;    
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-family:Arial, Helvetica, sans-serif;
+
+}
+.Eat1{
+    font-weight: 900;
+    font-size: 4rem;
+}
+.h11{
+    font-size: 2rem;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+.blog{
+    height: 150px;
+    width: 400px;
+    margin-top: 70px;
+    margin-left: 50px;
+    border: 2px solid orange;
+    border-radius: 3px;
+    background-color: rgb(235, 234, 234);
+    align-items: center;
+    padding:40px 20px 0px 20px;
+}
+
+button{
+    height: 45px;
+    width: 200px;
+    border-radius: 0px;
+    background-color:aliceblue;
+    color:#1B1A17 ;
+    font-size: 1.4rem;
+    font-weight: 900;   
+    font-family:'Times New Roman', Times, serif;
+    display: inline-block;
+    margin-left: 12%;
+    margin-top: 2%;
+    background-color: rgb(220, 162, 54);
+   
+} 
+
